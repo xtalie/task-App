@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo mini app</title>
+    <link rel="stylesheet" href="./todo-app.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- this entails the todo mini writeup -->
+
+      <div class="writeup">
+        <h1 class="intro">TODO APP...</h1>
+        <p class="quotes">
+          The best preparation for tomorrow is doing your best today ...
+        </p>
+      </div>
+
+      <div class="box" id="box">
+
+        <!-- created the content in my js file deals with icons for menu etc -->
+
+        <div class="head-content" id="headContent"></div>
+         
+        <!-- todo area -->
+
+        <div class="body-content">
+          <h3 class="todo">Hello, Esther!</h3>
+
+          <input
+            type="text"
+            class="input-field"
+           
+            id="taskInput" 
+            placeholder="Type in your Todos..."
+          />
+          <button class="btn" id="addBtn">Add Items</button>
+
+          <div class="task-select">
+            <div class="task-area"><h2 class="task-heading">Tasks...</h2></div>
+            <div class="select-all">
+              <input type="checkbox" /> <label for="">Select All</label>
+            </div>
+          </div>
+
+          <ul class="lists"id="taskList"></ul>
+
+        </div>
+
+        <!-- side menu content -->
+
+        <div class="side-menu" id="sideMenu">
+          <div class="cancel">
+            <p class="close-x" id="closeX">X</p>
+          </div>
+
+          <div class="flex-profile">
+            <div class="profile-image-block">
+              <img class="profile-pic" src="./images/esther's ai2.jpg" alt="" />
+            </div>
+
+            <div class="nav-links">
+              <div class="nav-flex">
+                <div>
+                  <i
+                    class="fa-regular fa-bookmark font-awesome-style template"
+                  ></i>
+                </div>
+                <div>
+                  <li class="lis">
+                    <a class="more-info" href="">Template </a>
+                  </li>
+                </div>
+              </div>
+
+              <div class="nav-flex">
+                <div><i class="fa-solid fa-qrcode font-awesome-style"></i></div>
+                <div>
+                  <li class="lis">
+                    <a class="more-info" href="">Categories </a>
+                  </li>
+                </div>
+              </div>
+
+              <div class="nav-flex">
+                <div>
+                  <i class="fa-solid fa-chart-line font-awesome-style"></i>
+                </div>
+                <div>
+                  <li class="lis">
+                    <a class="more-info" href="">Analytics </a>
+                  </li>
+                </div>
+              </div>
+
+              <div class="nav-flex">
+                <div><i class="fa-solid fa-gear font-awesome-style"></i></div>
+                <div>
+                  <li class="lis">
+                    <a class="more-info" href="">Settings </a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+
+       <!-- modal element -->
+      <div class="modal-overlay close" id="modal">
+       
+        <div class="modal-content" id="modalContent">
+          <div class="modal-header">
+            <h3 class="edit-task">Edit task</h3>
+            <button id="closeButton" class="close-button">&#x2715;</button>
+          </div>
+          <div>
+            <textarea
+              name=""
+              id="textAreaField"
+              class="edit-input"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="btn-box">
+            <button id="editButton" class="edit-button">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a1a5e92d16.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./todo-app.js"></script>
+  </body>
+</html>
